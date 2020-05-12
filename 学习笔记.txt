@@ -1,0 +1,44 @@
+1.
+>>>第一行要定义文件格式-- <!document html>
+
+>>>所有tag都要有开头和结尾，开头是什么样 结尾就是开头的样子多加一个'/'
+eg. 
+<html> 
+<head> 
+<title>  
+<body> 
+<h1>
+<p> ' p:paragraph'
+</p>
+</h1>
+</body>
+</title>
+</head>
+</html>
+
+2.
+>>>Line breaks:<br>,要空几行 就打几个'<br>'
+
+>>>Space: '&nbsp',  要几个空格就打几个'&nbsp'
+
+>>>Comment: '<!-- 中间写comment -->'， 如果没有感叹号，文字就会在页面上显示出来
+
+3.
+>>>Ordered lists: '<ol>'
+
+>>>Unordered lists: '<ul>'
+
+>>>Both of them are using '<li>'
+eg.
+<ul>
+	 
+	<li>CD</li>
+	<li>DVD</li>
+	<li>Blu Ray</li>
+	   
+</ul>
+>>>ul:显示的是bulletpoint   ol:显示的是1. 2. 3.
+
+----------12/05/2020----------
+
+4.
