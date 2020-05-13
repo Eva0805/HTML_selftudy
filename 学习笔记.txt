@@ -42,3 +42,31 @@ eg.
 ----------12/05/2020----------
 
 4.
+<table>
+<tr>: defines the table rows. There must be at least one row 
+<td>: defines a standard cell in an HTML table. It will contain data for the table, and not table headings.
+<th>: <thead>, is header cell that appear in the first row of an HTML table. 表头
+eg.
+<body>
+<table>
+
+<tr>
+ <th> The Planets </th>
+ <th> The Oceans </th>
+ <th> The Deserts </th>
+</tr>
+
+<tr>
+ <td> Earth </td>
+ <td> Pacific</td>
+ <td> Sahara</td>
+</tr>
+
+<tr>
+ <td> Pluto</td>
+ <td> Atlantic
+ <td> Gobi
+</tr>
+
+</table>
+</body>
