@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head> </head>
+
+
+<body>
+
+<form action=" " method=" ">
+
+Yes:
+<input type="radio" name="yesorno" value=" "> </br>
+No:
+<input type="radio" name="yesorno" value=" ">
+
+<!--when you just want to make a single choice, the 'name' value in both tag should be the same, then you can choice one from two, or you can choice both at the same time, and that doesn't make sence-->
+
+
+</form>
+
+
+
+</body>
+
+
+
+</html>
