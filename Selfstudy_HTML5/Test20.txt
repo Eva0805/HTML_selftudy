@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<!--meta element always in the head element, because meta element is not available to user, it will not display on the web page.  meta element does not have closing tag, -->
+
+<head> 
+<title></title>
+
+<meta name="description" content="This is web page about fish. We cover all the fish in the world." />
+
+<meta name="keywords" content="fish, ocean, aqaurium" />
+<meta http-equiv="author" content="John Doe" />
+<meta http-equiv="content-language" content="en-us" 
+
+
+
+</head>
+
+<body>
+
+<div>
+
+</div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<!--iframe element is used to insert content from an external source, and do not need to reload or refresh when you insert them in.-->
+
+<head> </head>
+
+<body>
+<!--frameborder=0 means it is off, frameborder=1 means it is on-->
+
+<iframe frameborder=" 1" width=" 200" height=" 200" src=" first.html" name=" ouriframe" id=" ourframe">
+Do you see this?
+</iframe><br/>
+
+<a href="second.html" target="ouriframe">switch to new document</a>
+
+
+</body>
+
+
+
+</html>
