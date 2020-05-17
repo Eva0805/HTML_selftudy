@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Just Practice</title>
+</head>
+<body>
+<h1>1.默认对齐的图像(align="bottom")</h1>
+<p>这是一些文本:<img src="smiley.gif" alt="该图片不存在" height="30" width="40">这是另一些文本</p>
+
+<h1>2.这是第二段文本(align="top")</h1>
+<p>这是第二段的文本 <img src="smiley.gif" alt="cann't find" width="20" height="40">这还是第二段文本</p>
+
+<h1>3.这是第三段文本(align="top")</h1>
+<p>这是第三段的文本 <img src="smiley.gif" alt="cann't find" width="20" height="40">这还是第三段文本</p>
+
+<p>4.笑脸 <img src="smiley.gif" alt="cann't find" style="float:right" width="20" height="40">这还是第四段文本</p>
+
+<p>5.创建有边框图片链接:
+    <a href="http://www.google.com">
+    <img border="1" src="smiley.gif" alt="cannot find" width="20" height="30">
+    </a> </p>
+
+<p>6.创建无边框图片链接：
+    <a href="http://www.youtube.com" target="_blank">
+        <img border="0" src="smiley.gif" alt="cannot find" width="20" height="30">
+    </a> </p>
+<!--<a>中加上target="_blank",页面就会在新的窗口打开-->
+</body>
+
+<p>7.表格从table开始，行从tr开始，数据从td开始</p>
+<h4>one row with one column:</h4>
+<table border="1">
+    <tr>
+        <td>100</td>
+    </tr>
+</table>
+
+<h4>8.one row with three columns:</h4>
+<table border="10">
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+</table>
+
+<h4>9.two rows with three columns:</h4>
+<table border="30">
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>1001</td>
+        <td>2002</td>
+        <td>3003</td>
+    </tr>
+</table>
+
+<h4>10.table with heading</h4>
+<table border="10">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>150</td>
+    </tr>
+</table>
+
+<h4>11.水平标题：</h4>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+        <th>Telephone</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>1234567</td>
+        <td>7654321</td>
+    </tr>
+</table>
+
+<h4>12.垂直标题：</h4>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <td>Bill Gates</td>
+    </tr>
+    <tr>
+        <th>Telephone</th>
+        <td>123456789</td>
+    </tr>
+    <tr>
+        <th>Telephone</th>
+        <td>987654321</td>
+    </tr>
+</table>
+
+<h4>13.有标题的表格, 用的是'caption'这个tag</h4>
+<table border="10">
+    <caption>Monthly savings</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Febuary</td>
+        <td>$200</td>
+    </tr>
+</table>
+
+<h4>14.跨行或跨列的表格单元格--单元格跨两列:</h4>
+<table border="10">
+    <tr>
+        <th>Name</th>
+        <th colspan="3">Telephone</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>112233</td>
+        <td>445566</td>
+        <td>778899</td>
+    </tr>
+</table>
+
+<h4>15.跨行或跨列的表格单元格--单元格跨两行:要注意跨的两行要分开写，在不同的tr里</h4>
+<table border="6">
+    <tr>
+        <th>First Name:</th>
+        <td>Bill Gates</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Telephone:</th>
+        <td>11223344</td>
+    </tr>
+    <tr>
+        <td>55667788</td>
+    </tr>
+</table>
+
+<h4>16.表格内的标签：本例演示如何显示在不同的元素内显示元素。</h4>
+<table border="3">
+    <tr>
+        <td>
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+        </td>
+        <td>This cell includes one table:
+            <table border="1">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>This cell includes a list</p>
+            <ul>
+                <li>apples</li>
+                <li>bananas</li>
+                <li>pineapples</li>
+            </ul>
+        </td>
+        <td>HELLO</td>
+    </tr>
+</table>
+
+<h4>17.单元格边距(Cellpadding):创建单元格内容与其边框之间的空白。</h4>
+<table border="3"  cellpadding="10">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+
+<h4>18.单元格间距(Cellspacing):增加单元格之间的距离。</h4>
+<h4>单元格间距="0":</h4>
+<table border="1" cellspacing="0">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+
+<h4>单元格间距="10":</h4>
+<table border="1" cellspacing="10">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+
+<h4>19.自定义列表(项目及其注释的组合): 自定义列表以‘dl’标签开始。每个自定义列表项以‘dt’开始。每个自定义列表项的定义以‘dd’开始。</h4>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+</dl>
+
+<h4>20.不同类型的有序列表</h4>
+<h5>大写字母列表：</h5>
+<ol type="A">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ol>
+
+<h5>小写字母列表：</h5>
+<ol type="a">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ol>
+
+<h5>罗马数字列表：</h5>
+<ol type="I">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ol>
+
+<h5>小写罗马数字列表:</h5>
+<ol type="i">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ol>
+
+<h4>21.不同类型的无序列表</h4>
+<p><b>注意：</b> 在 HTML 4中 ul 属性已废弃，HTML5 已不支持该属性，因此我们使用 CSS 代替来定义不同类型的无序列表如下：</p>
+<h5>圆点列表：</h5>
+<ul style="list-style-type:disc">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ul>
+
+<h5>圆圈列表：</h5>
+<ul style="list-style-type:circle">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ul>
+
+<h5>正方形列表：</h5>
+<ul style="list-style-type:square">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Lemons</li>
+    <li>Oranges</li>
+</ul>
+
+<h4>22.嵌套列表1</h4>
+<ul style="list-style-type:disc">
+    <li>Coffee</li>
+    <li>Tea</li>
+        <ul style="list-style-type:circle">
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ul>
+    <li>Milk</li>
+</ul>
+
+<h4>23.嵌套列表2</h4>
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+            <li>Black tea</li>
+            <li>Green tea
+                <ul>
+                    <li>China</li>
+                    <li>Africa</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+
+
+<h4>24.</h4>
+
+
+
+
+
+
+
+</html>

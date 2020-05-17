@@ -1,0 +1,81 @@
+<!document html>
+<html>
+
+<head>
+
+<style type="text/css">
+h1 {background-color: purple; color: green; font-size:60;}
+h2{color:red}
+</style>
+
+<!--link rel="stylesheet" type="text/css" href="styles.css"  链接到一个外部样式表-->
+<!--CSS修饰标签的样式，有 "内联" 和 "外引" 两种方式。
+对于大部分标签，以上两种方法均可，且修改父级标签，子级标签特性也会改变。但某些标签确无法通过修改父级标签来改变子级标签特性，如a标签，修改其颜色特性，必须直接修改 a 标签的特性才可。eg.<a href="#" style="color:red;" rel="nofollow">只能使用"内联"方式</a>-->
+
+</head>
+
+<body>
+<a href="//www.runoob.com/"  style="text-decoration:none;">访问runoob.com!</a>
+<!--style="text-decoration:none; 这样展示出来的网址没有下划线-->
+
+<h1 style="text-align :center;"> The Fish Website </h1>
+<!--text-align是文本对齐方式的意思-->
+
+<p>Welcome to the Fish Web Site. Everything you want to know about fish is in this web site.  </p>
+
+<h2>This is a section on Bass fish.  </h2>
+
+<p>
+一个图像:
+<img src="smiley.gif" alt="Smiley face" width="32" height="32"></p>
+
+<p>
+一个动图:
+<img src="hackanm.gif" alt="Computer man" width="48" height="48"></p>
+
+<!--注意插入动图的语法和静态图的语法是一样的。-->
+<!--浏览器将图像显示在文档中图像标签出现的地方。如果你将图像标签置于两个段落之间，那么浏览器会首先显示第一个段落，然后显示图片，最后显示第二段。-->
+
+<p>
+从不同文件夹插入图片:
+<img src="D:/Selfstudy_HTML-CSS-JavaScript/Selfstudy_HTML-CSS-JavaScript/HTML5/hackanm.gif" alt="Computer man" width="48" height="48"> </p>   <!--HTML5用的是‘/’-->
+
+<!--排列图片: 本例演示如何在文字中排列图像。-->
+<h4>默认对齐的图像 (align="bottom"):</h4>
+<p>这是一些文本。 <img src="smiley.gif" alt="Smiley face" width="32" height="32"> 这是一些文本。</p>
+
+<h4>图片使用 align="middle":</h4>
+<p>这是一些文本。 <img src="smiley.gif" alt="Smiley face" align="middle" width="32" height="32">这是一些文本。</p>
+
+<h4>图片使用 align="top":</h4>
+<p>这是一些文本。 <img src="smiley.gif" alt="Smiley face" align="top" width="32" height="32">这是一些文本。</p>
+
+<!--浮动图像:本例演示如何使图片浮动至段落的左边或右边。-->
+<p>
+<img src="smiley.gif" alt="Smiley face" style="float:left" width="32" height="32"> 一个带图片的段落，图片浮动在这个文本的左边。 </p>
+
+<p>
+<img src="smiley.gif" alt="Smiley face" style="float:right" width="32" height="32"> 一个带图片的段落，图片浮动在这个文本的右边。 </p>
+
+<!--创建图像映射: 本例显示如何创建带有可供点击区域的图像地图。其中的每个区域都是一个超级链接。-->
+<p>点击太阳或其他行星，注意变化：</p>
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+
+<!--设置图像链接: 本例演示如何将图像作为一个链接使用。-->
+<p>创建图片链接:
+<a href="//www.runoob.com/html/html-tutorial.html">
+<img  border="10" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+
+<p>无边框的图片链接:
+<a href="//www.runoob.com/html/html-tutorial.html">
+<img border="0" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+
+</body>
+
+</html>
